@@ -3,7 +3,7 @@ export default function App4(){
     const[user,setUser]=useState({});
     const[msg,setMsg] = useState();
     const handleSubmit =() =>{
-        if(user=="john@gmail.com" && user=="1234"){
+        if(user.email=="john@gmail.com" && user.password=="1234"){
             setMsg("Welcome John")
         }else{
             setMsg("Access Denied");
@@ -11,7 +11,7 @@ export default function App4(){
     }
     return (
         <div>
-            <h3>This is App3</h3>
+            <h3>This is App4</h3>
             {msg}
             <p>
                 <input 
